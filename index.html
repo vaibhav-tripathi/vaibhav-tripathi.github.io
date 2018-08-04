@@ -1,3 +1,4 @@
+
 <!-- Start of Website -->
 <!-- Start of Header Part-->
 <style>
@@ -535,7 +536,7 @@ Oracle</div>
 			<div class="skill-label">
 IBM Cognos</div>
 			<div class="skill-icons">
-			<span></span><span></span><span></span><span></span><span></span><span></span><span></span><
+			<span></span><span></span><span></span><span></span><span></span><span></span><span></span>
 			</div>
 		</div>
 	</div>
@@ -731,16 +732,18 @@ Bizagi Modeler</div>
 </section>
 <!--End of about Part-->
 <!--Start of work Part-->
+<!--Start of work Part-->
 <html>
 <head>
-<script src="jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/B55FB9A2-E45C-3242-96D3-CF26E54EC901/main.js" charset="UTF-8"></script><script src="jquery-1.10.2.min.js"></script>
 <style>
 work body{
 	margin:0;
 	background :#e5eaee;
 	
 	}
-work h3 {
+
+h3 {
 	font-size:25px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -752,19 +755,21 @@ work h3 {
 	}
 .modal
 {
-	width:100%;
-	height:100%;
-	position:fixed;
+	width: 100%;
+	height: 100%;
+	position: fixed;
 	top:0;
 	display:none;
 }
+
 .modal_close
 {
-	width:100%;
-	height:100%;
-	background:rgba(0,0,0,.8);
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.8);
 	position:fixed;
 	top:0;
+	margin-left: -8px;
 }
 .close
 {
@@ -773,14 +778,14 @@ work h3 {
 .modal_main
 {
 	width:50%;
-	height:300px;
+	height:500px;
 	background:#B7BBBE;
 	z-index:4;
 	position:fixed;
 	top:16%;
 	border-radius:4px;
-	left:24%;
-	display:none;
+	left:25%;
+	overflow: auto;
  -webkit-animation-duration: .5s;
     -webkit-animation-delay: .0s;
     -webkit-animation-fill-mode: both;
@@ -793,12 +798,19 @@ work h3 {
 @-webkit-keyframes fadeInRight{0%{opacity:0;-webkit-transform:translateX(20px)}100%{opacity:1;-webkit-transform:translateX(0)}}
 
 .content{
-		 padding: 95px 0px 30px;
+		 padding: 30px 0px 30px;
+		 text-align: justify;
+		 margin-left: 20px;
+		 margin-right: 10px;
 		 }
 
+		 .content li{
+		 }
 button
 {
 display: block;
+width: 25%;
+height: 150px;
 padding:40px;
 border-radius:5px;
 background:#3399cc;
@@ -806,25 +818,58 @@ border:none;
 font-size:20px;
 color:#fff;
 margin-top: 40px;
-margin-left: 30px;
+margin-left: 80px;
 float: left;
-text-align: justify;
+text-align: center;
 position: center;
 }
+button:hover{background-color: #b3b3ff;}
+
+
+.ProjTable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%;
+}
+
+.ProjTable td, th {
+    border: 1px solid black;
+    padding: 8px;
+	text-align: left;
+}
+
+.ProjTable th, td {
+    border: 1px solid black;
+    padding: 8px;
+	text-align: left;
+}
+.ProjTable tr:nth-child(even){background-color: #f2f2f2;}
+
+.ProjTable tr:hover {background-color: #ddd;}
+
+.ProjTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: white;
+    color: black;
+
+	}
 </style>
 
 <script>
 $(document).ready(function(){
   $(".call_modal").click(function(){
-	$(".modal").fadeIn();
-	$(".modal_main").show();
-	  });
-});
-$(document).ready(function(){
+    var modal_container = $(this).closest('.modal_container');
+    $(".modal", modal_container).fadeIn();
+    $(".modal_main", modal_container).show();
+  });
+
   $(".close").click(function(){
-	$(".modal").fadeOut();
-	$(".modal_main").fadeOut();
-	  });
+    var modal_container = $(this).closest('.modal_container');
+    $(".modal", modal_container).fadeOut();
+    $(".modal_main", modal_container).fadeOut();
+  });
 });
 </script>
 </head>
@@ -832,188 +877,477 @@ $(document).ready(function(){
 <body>
 <h3 id="work">Work</h3>
 
-<div class="gl_content">
+<div class="gl_content modal_container">
 <button class="call_modal" style="cursor:pointer;">Illinois Medicaid Data Analysis</button>
 <div class="modal">
 <div class="modal_close close"></div>
 <div class="modal_main">
 <img src="i783wQYjrKQ.png" class="close" style="margin-top:13px;left:96%;position:fixed;">
 <div class="content">
-<p><strong>More than 4 years of experienc as data specialist.</strong> My last project was moving an entire cards portfolio data from a legacy system to a new platform along with its all procedures and policies. Along with that i also deployed a new and more securtised way of doing transaction for bank called as Digital Wallet Tokenization which is in demand currently</p>
+<p><strong>Illinois Medicaid Data Analysis</strong> project is to understand the billing pattern of providers. This project deals with various aspect of medical billing and has main focus on data analysis.</p>
+<p><strong>Responsibilities:</strong>
+<ul>
+<li> Responsible for analyzing Illinois Medicaid claims data to identify billing patterns.</li>
+<li> Understanding the business user requirement to develop new system and ensuring quality delivery.</li>
+<li> Created connection diagram to show relationship between legacy system and Illinois Medicaid data warehouse.</li>
+<li> Responsible for performing budget analysis and creating utilization reports for bureau.</li>
+<li> Managed the State sponsored SharePoint website (Design, User Access Management, Portal usage analysis).</li>
+</ul>  
+</p>
+<table id="ProjTable">
+  <tr>
+    <td><strong>Software</strong></td>
+    <td><strong>Teradata, BI Query</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Location</strong></td>
+    <td><strong>Springfield, Illinois, US</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Client</strong></td>
+    <td><strong>Illinois Department of Healthcare and Family Services</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Role</strong></td>
+    <td><strong>Data Analyst</strong></td>
+  </tr>
+</table>
 </div>
 </div>
 </div>
 </div>
 
-<div class="gl_content">
+<div class="gl_content modal_container">
 <button class="call_modal" style="cursor:pointer;">ApplePay</button>
 <div class="modal">
 <div class="modal_close close"></div>
 <div class="modal_main">
 <img src="i783wQYjrKQ.png" class="close" style="margin-top:13px;left:96%;position:fixed;">
 <div class="content">
-<p><strong>More than 4 years of experienc as data specialist.</strong> My last project was moving an entire cards portfolio data from a legacy system to a new platform along with its all procedures and policies. Along with that i also deployed a new and more securtised way of doing transaction for bank called as Digital Wallet Tokenization which is in demand currently</p>
+<p><strong>ApplePay</strong> is a new service launched by Apple that allows credit and debit cardholders to make purchases with their new Apple mobile devices, leveraging the digital “tokenization” of a credit or debit card number, into an embedded secure element on Apple devices with NFC ability. This project is in line with the HSBC’s digital Payments strategy and is viewed as secure way of making Payments for our cardholders. This will provide customers with an array of capabilities that simplify and enhance the Payment experience and increase digital engagement. Apple has made this service available to its Customers in USA and now looking to implement it in UK. HSBC being one of the firsts who will be going live with this service in UK need to be ready with the changes as per the requirements in an aggressive timeline.</p>
+<p><strong>Responsibilities:</strong>
+<ul>
+<li> Managing the entire development and deployment of project.</li>
+<li> Involved in development of high priority feed changes and delivering it on a very aggressive timeline.</li>
+<li> Reviewing the jobs being developed by team.</li>
+<li> Verifying the results of Unit testing.</li>
+<li> Involved in analysis as well for the existing feed changes.</li>
+</ul>  
+</p>
+<table id="ProjTable">
+  <tr>
+    <th>Duration</th>
+    <th>1 Man Years</th>
+  </tr>
+  <tr>
+    <td><strong>Software</strong></td>
+    <td><strong>Datastage 8.1</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Location</strong></td>
+    <td><strong>Offshore, Hyderabad, India</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Client</strong></td>
+    <td><strong>HSBC UK</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Role</strong></td>
+    <td><strong>Technical Lead</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Team Size</strong></td>
+    <td><strong>6</strong></td>
+  </tr>
+</table>
 </div>
 </div>
 </div>
 </div>
 
-<div class="gl_content">
+<div class="gl_content modal_container">
 <button class="call_modal" style="cursor:pointer;">FireFly</button>
 <div class="modal">
 <div class="modal_close close"></div>
 <div class="modal_main">
 <img src="i783wQYjrKQ.png" class="close" style="margin-top:13px;left:96%;position:fixed;">
 <div class="content">
-<p><strong>More than 4 years of experienc as data specialist.</strong> My last project was moving an entire cards portfolio data from a legacy system to a new platform along with its all procedures and policies. Along with that i also deployed a new and more securtised way of doing transaction for bank called as Digital Wallet Tokenization which is in demand currently</p>
+<p>FireFly was a key initiative from bank to migrate oJohn Lewis portfolio cards data from historic systems to a newly created environment in bank.</p>
+<p><strong>Responsibilities:</strong>
+<ul>
+<li> Server configuration and management on Linux operating systems and created connection between various data sources using SSH/Connect Direct.</li>
+<li> Database setup, role creation, database management in Teradata.</li>
+<li> Executed unit test plan and ensured the functionality.</li>
+<li> Automatic Batch scheduling using Control-M.</li>
+<li> Responsible for reviewing jobs and ensuring quality deployments.</li>
+</ul>  
+</p>
+
+<table id="ProjTable">
+  <tr>
+    <th>Duration</th>
+    <th>2 Man Years</th>
+  </tr>
+  <tr>
+    <td><strong>Software</strong></td>
+    <td><strong>Datastage 11</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Location</strong></td>
+    <td><strong>Offshore, Hyderabad, India</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Client</strong></td>
+    <td><strong>HSBC UK</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Role</strong></td>
+    <td><strong>Technical Lead</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Team Size</strong></td>
+    <td><strong>18</strong></td>
+  </tr>
+</table>
 </div>
 </div>
 </div>
 </div>
 
-<div class="gl_content">
+<div class="gl_content modal_container">
 <button class="call_modal" style="cursor:pointer;">Global Reporting Infrastructure Project (GRIP)</button>
 <div class="modal">
 <div class="modal_close close"></div>
 <div class="modal_main">
 <img src="i783wQYjrKQ.png" class="close" style="margin-top:13px;left:96%;position:fixed;">
 <div class="content">
-<p><strong>More than 4 years of experienc as data specialist.</strong> My last project was moving an entire cards portfolio data from a legacy system to a new platform along with its all procedures and policies. Along with that i also deployed a new and more securtised way of doing transaction for bank called as Digital Wallet Tokenization which is in demand currently</p>
+<p><strong>Global Reporting Infrastructure Project (GRIP)</strong> is a key global initiative and is aimed at delivering a set of standard reports with standard metrics, definitions and templates across RBWM products Origination, Portfolio Management, Profitability and RWAs by providing a global platform for Risk data aggregation and reporting.
+RBWM Risk has historically lacked Group level risk aggregation and reporting capability and relied upon end user computing to produce executive reporting to drive risk management and decision making. Numerous inconsistencies relating to Key Performance Indicators (KPI) captured, business definitions used, calculations performed and report formats utilized are inherent with this method of reporting.
+RBWM Risk management desires a system that will provide more metrics and KPIs to drive better decision making and analysis.</p>
+<p><strong>Responsibilities:</strong>
+<ul>
+<li> Involved in SQL scripting in order to create the SNAP and INTERFACE tables, which is used as the driver table while reporting.</li>
+<li> Developed jobs according to specified requirements.</li>
+<li> Executed unit test plan and ensured the functionality.</li>
+<li> Involved in the analysis of the project to develop key fields for reporting.</li>
+<li> Responsibility of managing the infrastructure issues and effectively communicating in order to get the infrastructure issues resolved in time and also updating the status to the onsite.</li>
+</ul>  
+</p>
+
+<table id="ProjTable">
+  <tr>
+    <th>Duration</th>
+    <th>4 Man Years</th>
+  </tr>
+  <tr>
+    <td><strong>Software</strong></td>
+    <td><strong>Datastage 8.1</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Location</strong></td>
+    <td><strong>Offshore, Hyderabad, India</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Client</strong></td>
+    <td><strong>HSBC UK</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Role</strong></td>
+    <td><strong>Lead Datastage Developer</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Team Size</strong></td>
+    <td><strong>10</strong></td>
+  </tr>
+</table>
 </div>
 </div>
 </div>
 </div>
 
-<div class="gl_content">
-<button class="call_modal" style="cursor:pointer;">SAS Consult and Support</button>
-<div class="modal">
-<div class="modal_close close"></div>
-<div class="modal_main">
-<img src="i783wQYjrKQ.png" class="close" style="margin-top:13px;left:96%;position:fixed;">
-<div class="content">
-<p><strong>More than 4 years of experienc as data specialist.</strong> My last project was moving an entire cards portfolio data from a legacy system to a new platform along with its all procedures and policies. Along with that i also deployed a new and more securtised way of doing transaction for bank called as Digital Wallet Tokenization which is in demand currently</p>
-</div>
-</div>
-</div>
-</div>
-
-<div class="gl_content">
+<div class="gl_content modal_container">
 <button class="call_modal" style="cursor:pointer;">FSCS (Financial Services Compensation Scheme) In-Flight Transactions</button>
 <div class="modal">
 <div class="modal_close close"></div>
 <div class="modal_main">
 <img src="i783wQYjrKQ.png" class="close" style="margin-top:13px;left:96%;position:fixed;">
 <div class="content">
-<p><strong>More than 4 years of experienc as data specialist.</strong> My last project was moving an entire cards portfolio data from a legacy system to a new platform along with its all procedures and policies. Along with that i also deployed a new and more securtised way of doing transaction for bank called as Digital Wallet Tokenization which is in demand currently</p>
+<p><strong>Financial Service Compensation Scheme (FSCS)</strong> ensures that, the customers are compensated in case of an eventuality of a bank going into default. The FSCS is governed by the rules contained with the Prudential Regulation Authority (PRA) and Financial Conduct Authority (FCA) COMP rulebook. This includes a requirement for firms with more than 5,000 accounts held by eligible claimants to provide Single Customer View (SCV) information in an electronic format which is readily transferable to and compatible with FSCS’s systems within 72 hours of request or default. SCV is defined as ‘a single, consistent view of an eligible claimant’s aggregate protected deposits with the relevant firm’. The FSCS have been clear in their expectation of firms in regards to IFTs. Within the 72 hour period, and prior to generating and sending the SCV file, the FSCS would expect firms to take a rigorous and comprehensive approach to the identification and application of in-flight transactions (initiated prior to default) to those accounts within the SCV file. The FSCS would expect firms to apply all transactions that are known by the firm and that were irrevocable prior to the point of default.</p>
+<p><strong>Responsibilities:</strong>
+<ul>
+<li> Involved mainly in the technical analysis of the existing code by which I got exposure to the analytical skills</li>
+<li> Developing the key changes to accommodate the IFT amount in existing feeds as well as new feeds.</li>
+<li> Executed unit test plan and ensured the functionality.</li>
+<li> As am the only developer in the project ,playing a vital role in all the communications of Analyst team, Tech lead and the Project lead.</li>
+</ul>  
+</p>
+
+<table id="ProjTable">
+  <tr>
+    <th>Duration</th>
+    <th>2 Man Years</th>
+  </tr>
+  <tr>
+    <td><strong>Software</strong></td>
+    <td><strong>Datastage 8.1</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Location</strong></td>
+    <td><strong>Offshore, Hyderabad, India</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Client</strong></td>
+    <td><strong>HSBC UK</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Role</strong></td>
+    <td><strong>Software Engineer/ Datastage Developer</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Team Size</strong></td>
+    <td><strong>5</strong></td>
+  </tr>
+</table>
 </div>
 </div>
 </div>
 </div>
+
+<div class="gl_content modal_container">
+<button class="call_modal" style="cursor:pointer;">SAS Consult and Support</button>
+<div class="modal">
+<div class="modal_close close"></div>
+<div class="modal_main">
+<img src="i783wQYjrKQ.png" class="close" style="margin-top:13px;left:96%;position:fixed;">
+<div class="content">
+<p>The project is to support the analytics who are using UK and HBME SAS servers. We install, configure, develop, manage and support SAS analytics software and processes, and the infrastructure it run's on. We provide the business with tools to generate benefit/return on the investment the Bank has made in the UK DWH and other bank data sources.</p>
+<p><strong>Responsibilities:</strong>
+<ul>
+<li> Server Management</li>
+<li> SSH Configuration</li>
+<li> ACL configuration/maintenance</li>
+<li> Automation of jobs via Control-M</li>
+<li> Database connectivity and role creations</li>
+<li> SAS Data retention reporting process</li>
+<li> User and Process support</li>
+</ul>  
+</p>
+
+<table id="ProjTable">
+  <tr>
+    <td><strong>Software</strong></td>
+    <td><strong>SAS Tool Set</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Location</strong></td>
+    <td><strong>Offshore, Hyderabad, India</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Client</strong></td>
+    <td><strong>HSBC UK</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Role</strong></td>
+    <td><strong>Production Support</strong></td>
+  </tr>
+  <tr>
+    <td><strong>Team Size</strong></td>
+    <td><strong>3</strong></td>
+  </tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+
 
 
 </body>
 </html>
 <!--END of work Part-->
 <!--Start of Testimonal Part-->
+<html>
+<head>
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/B55FB9A2-E45C-3242-96D3-CF26E54EC901/main.js" charset="UTF-8"></script><script src="jquery-1.10.2.min.js"></script>
 <style>
+work body{
+	margin:0;
+	background :#e5eaee;
+	
+	}
 
-Testimonals body{background-color: #e5eaee;}
-
-
-
-.testimonials{
-				margin-top: 10px;
-				padding-top: 300px;
-				padding-bottom: 80px;
-				}
-				
-
-h3{
+h3 {
 	font-size:25px;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #e1c184;
 	text-align: center;
-	padding: 0px 0px 0px;
+	padding: 50px 0px 0px;
 	clear: both;
+	
 	}
 	
-.col-md-4{
-max-width: 950px;
-width: 400px;
-float: left;
-text-align: justify;
-margin-left: 20px;
-margin-right: 20px;
-padding-bottom: 10px;
+.prof1-pic {
+			border-radius: 50%;
+			height: 100px;
+			width: 100px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			float: left;
+			}
+.modal
+{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top:0;
+	display:none;
 }
 
-.testimonials cite img{
-width: 70px;
-height: 70px;
-border-radius: 50%;
+.modal_close
+{
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.8);
+	position:fixed;
+	top:0;
+	margin-left: -8px;
+}
+.close
+{
+	cursor:pointer;
+}
+.modal_main
+{
+	width:50%;
+	height:450px;
+	background:#B7BBBE;
+	z-index:4;
+	position:fixed;
+	top:16%;
+	border-radius:4px;
+	left:25%;
+	overflow: auto;
+ -webkit-animation-duration: .5s;
+    -webkit-animation-delay: .0s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+	    -webkit-backface-visibility: visible!important;
+    -webkit-animation-name: fadeInRight;
+	text-align: center;
+}
+@-webkit-keyframes fadeInRight{0%{opacity:0;-webkit-transform:translateX(20px)}100%{opacity:1;-webkit-transform:translateX(0)}}
 
-}	
+.content{
+		 padding: 30px 0px 30px;
+		 text-align: justify;
+		 margin-left: 20px;
+		 margin-right: 10px;
+		 }
 
-.testimonials p{
-				line-height: 22px;
-				font-size: 18px}
-				
-.testimonials p strong{
-				text: Italic;}				
+		 .content li{
+		 }
+.testimonials button
+{
+display: block;
+width: 26%;
+height: 200px;
+padding:40px;
+border-radius:5px;
+background:#3399cc;
+border:none;
+font-size:20px;
+color:#fff;
+margin-top: 40px;
+margin-left: 70px;
+float: left;
+text-align: right;
+position: center;
+}
+button:hover{background-color: #b3b3ff;}
+
 </style>
-<section id="Testimonals">
+
+<script>
+$(document).ready(function(){
+  $(".call_modal").click(function(){
+    var modal_container = $(this).closest('.modal_container');
+    $(".modal", modal_container).fadeIn();
+    $(".modal_main", modal_container).show();
+  });
+
+  $(".close").click(function(){
+    var modal_container = $(this).closest('.modal_container');
+    $(".modal", modal_container).fadeOut();
+    $(".modal_main", modal_container).fadeOut();
+  });
+});
+</script>
+</head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+<section id="Testimonals">
 <section class="testimonials">
-<div class="Testimonal_overview">
+
 <h3 id="Testimonals">Testimonials</h3> 
-<div class="container">
-<div class="row">
-<div class="col-md-4">
 
-	<p><strong><i>More than 4 years of experienc as data specialist.</i></strong> My last project was moving an entire cards portfolio data from a legacy system to a new platform along with its all procedures and policies. Along with that i also deployed a new and more securtised way of doing transaction for bank called as Digital Wallet Tokenization which is in demand currently</p>
-	
-<cite><img src="Profile.jpg">Amy Moffat, Billing Manager HFS</cite>
-	
-	
-	</div>
-<div class="col-md-4">
-	
-	<p><strong><i>More than 4 years of experienc as data specialist.</i></strong> My last project was moving an entire cards portfolio data from a legacy system to a new platform along with its all procedures and policies. Along with that i also deployed a new and more securtised way of doing transaction for bank called as Digital Wallet Tokenization which is in demand currently</p>
-	
-<cite><img src="Profile.jpg">Amy Moffat</cite>
-	
-
-	</div>
-<div class="col-md-4">
-	
-	<p><strong><i>More than 4 years of experienc as data specialist.</i></strong> My last project was moving an entire cards portfolio data from a legacy system to a new platform along with its all procedures and policies. Along with that i also deployed a new and more securtised way of doing transaction for bank called as Digital Wallet Tokenization which is in demand currently</p>
-	
-<cite><img src="Profile.jpg">Amy Moffat</cite>
-	
-	
-	</div>
-<div class="col-md-4">
-	
-	<p><strong><i>More than 4 years of experienc as data specialist.</i></strong> My last project was moving an entire cards portfolio data from a legacy system to a new platform along with its all procedures and policies. Along with that i also deployed a new and more securtised way of doing transaction for bank called as Digital Wallet Tokenization which is in demand currently</p>
-	
-<cite><img src="Profile.jpg">Amy Moffat</cite>
-	
-	
-	</div>
-
-<div class="col-md-4">
-	
-	<p><strong><i>More than 4 years of experienc as data specialist.</i></strong> My last project was moving an entire cards portfolio data from a legacy system to a new platform along with its all procedures and policies. Along with that i also deployed a new and more securtised way of doing transaction for bank called as Digital Wallet Tokenization which is in demand currently</p>
-	
-<cite><img src="Profile.jpg">Amy Moffat</cite>
-	
-	
-	</div>	
-
+<div class="gl_content modal_container">
+<button  class="call_modal" style="cursor:pointer;"><img src="Profile.jpg" class="prof1-pic">Amy Moffat, NIPS Billing Manager, Illinois Department of Healthcare and Family Service, Springfield Illinois</button>
+<div class="modal">
+<div class="modal_close close"></div>
+<div class="modal_main">
+<img src="i783wQYjrKQ.png" class="close" style="margin-top:13px;left:96%;position:fixed;">
+<div class="content">
+<p><strong>Illinois Medicaid Data Analysis</strong> project is to understand the billing pattern of providers. This project deals with various aspect of medical billing and has main focus on data analysis.</p>
 </div>
 </div>
 </div>
+</div>
+
+<div class="gl_content modal_container">
+<button  class="call_modal" style="cursor:pointer;"><img src="Shashi.png" class="prof1-pic">Shashi Bhushan Marupaka, Senior Consultant Specialist,HSBC Software Development India</button>
+<div class="modal">
+<div class="modal_close close"></div>
+<div class="modal_main">
+<img src="i783wQYjrKQ.png" class="close" style="margin-top:13px;left:96%;position:fixed;">
+<div class="content">
+<p>I know him from the day he joined HSBC, I often had the opportunity to observe his desire to learn, strong analytical, testing and programming skills and depth of knowledge. His alertness and active involvement in the team were indicative of his interest in the subject. I would say he is one of the most enthusiastic resources that I have worked with.
+Information CoE is the project with with Vaibhav was associated during his tenure at HDBC. In Information CoE, ApplePay-BS and FireFly-BS is a direct revenue generator Big Star projects for Bank. Vaibhav worked as a BI Tech Lead and analyst in ApplePay-BS and FireFly-BS application, He has taken up higher responsibility in times of need. During many brain storming sessions to articulate business requirements, I observed that he had a fresh and simpler approach to a problem. This helped us to decrease the effort and increase the quality. His ability to interpret complex problems and work efficiently to obtain effective results are few of his traits, which will make him succeed in life. He always stood ahead of other associates by being proactive in accepting challenges, giving multiple ideas to enhance the project and out of box thinking. He has the ability of meeting impending deadlines without compromising the quality of work and even worked for long hours to meet the targets. At the same time he never hesitated to learn new technologies and kept himself abreast with the developments. He has shown real commitment and sense of responsibility towards the project, which has led to successful deployment’s and achieve project goals on time. <strong>With his knowledge, zeal to learn and his dedication to work in his areas of interest, I think he would be an extremely positive asset to any workplace.</strong></p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="gl_content modal_container">
+<button  class="call_modal" style="cursor:pointer;"><img src="Deepak.png" class="prof1-pic">Deepak Malviya, Development Manager, HSBC Software Development India</button>
+<div class="modal">
+<div class="modal_close close"></div>
+<div class="modal_main">
+<img src="i783wQYjrKQ.png" class="close" style="margin-top:13px;left:96%;position:fixed;">
+<div class="content">
+<p>I have known him for 2 years in my capacity as a “Development Manager” of “HSBC Global Technology”. Vaibhav has been working with project associated with Information CoE. In Information CoE he has worked on GRIP (Global Reporting Infrastructure Project). GRIP is a key global initiative and is aimed at delivering a set of standard reports with standard metrics, definitions and templates across RBWM products Origination, Portfolio Management, Profitability and RWAs by providing a global platform for Risk data aggregation and reporting. He has taken up the key areas in project and also taken part in key analysis as well. He was also responsible for conversion of some key application from SAS platform to Business Intelligence platform in GRIP. During this period as a Manager I have had a good interaction with him and hence would like to elucidate few of his facts that impressed me over the years. His self-confidence and optimistic outlook with the qualities of determination, perseverance and hard work enable him to achieve the toughest of his goals. His fertile imagination enables him to think deep and wide, helping him to explore his ideas and solutions. He was equally encouraging, helpful and his cheerful nature works to invigorate his colleagues. He was very quick in grasping things. He was very active in his approach and his meticulous attitude towards work has helped him to analyse situations and draw sound conclusions for the very same. Vaibhav is an adroit team player and has been part of Information CoE right since he joined the organization and has been responsible in handling the issues ever faced by the team. In addition to the project work he has also pursued his aspiration of learning new technologies. Apart from technologies, he has great functional knowledge about the various areas in bank, which makes him a key member of our team. <strong>I know this without any doubt that Vaibhav will be a great asset to any workplace he joins.</strong></p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="gl_content modal_container">
+<button  class="call_modal" style="cursor:pointer;"><img src="Profile.jpg" class="prof1-pic">Amy Moffat, NIPS Billing Manager, Illinois Department of Healthcare and Family Service, Springfield Illinois</button>
+<div class="modal">
+<div class="modal_close close"></div>
+<div class="modal_main">
+<img src="i783wQYjrKQ.png" class="close" style="margin-top:13px;left:96%;position:fixed;">
+<div class="content">
+<p><strong>Illinois Medicaid Data Analysis</strong> project is to understand the billing pattern of providers. This project deals with various aspect of medical billing and has main focus on data analysis.</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
 </section>
 </section>
 <!--END of Testimonal Part-->
